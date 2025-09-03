@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch index.ts",
-    "build": "tsc && vite build --outDir build",
+    "build": "tsc -p tsconfig.server.json && vite build --outDir build",
     "build-static": "vite build --outDir build && tsx build.ts",
     "preview": "vite preview",
     "start": "node dist/index.js"
