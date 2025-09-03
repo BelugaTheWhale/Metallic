@@ -1,3 +1,4 @@
+/// <reference path="./src/types/chemicaljs.d.ts" />
 import { ChemicalServer } from "chemicaljs";
 import express, { Request, Response } from "express";
 import fs from "fs";
