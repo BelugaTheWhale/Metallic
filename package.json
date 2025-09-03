@@ -8,7 +8,9 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch index.ts",
-    "build": "tsc -p tsconfig.server.json && vite build --outDir build",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build:client": "vite build --outDir build",
+    "build": "pnpm run build:server && pnpm run build:client",
     "build-static": "vite build --outDir build && tsx build.ts",
     "preview": "vite preview",
     "start": "node dist/index.js"
